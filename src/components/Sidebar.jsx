@@ -1,5 +1,4 @@
 import {
-  FaBook,
   FaBriefcase,
   FaCogs,
   FaDownload,
@@ -8,6 +7,7 @@ import {
   FaGraduationCap,
   FaHome,
   FaImage,
+  FaProjectDiagram,
   FaUser,
 } from "react-icons/fa";
 import homeImgJoy from "../assets/homeImgJoy.jpg";
@@ -22,16 +22,21 @@ const Sidebar = ({ isOpen, toggle, activeSection }) => {
       icon: <FaGraduationCap className="mr-3" />,
     },
     {
+      id: "projects",
+      label: "Academic Projects",
+      icon: <FaProjectDiagram className="mr-3" />,
+    },
+    {
       id: "experience",
       label: "Experience",
       icon: <FaBriefcase className="mr-3" />,
     },
     { id: "research", label: "Research", icon: <FaFlask className="mr-3" /> },
-    {
-      id: "publications",
-      label: "Publications",
-      icon: <FaBook className="mr-3" />,
-    },
+    // {
+    //   id: "publications",
+    //   label: "Publications",
+    //   icon: <FaBook className="mr-3" />,
+    // },
     { id: "skills", label: "Skills", icon: <FaCogs className="mr-3" /> },
     {
       id: "gallery",
@@ -97,9 +102,9 @@ const Sidebar = ({ isOpen, toggle, activeSection }) => {
 
       <div className="p-6 border-t border-blue-800">
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1F_rLFP-31_TuwxkyeCkY1VHFGeffiALw/view?usp=sharing"
           className="flex items-center justify-center bg-gradient-to-r from-secondary to-blue-500 hover:from-blue-600 hover:to-blue-700 text-white py-3 px-4 rounded-lg transition-all font-medium shadow-md"
-          download
+          target="_blank"
         >
           <FaDownload className="mr-2" />
           Download CV

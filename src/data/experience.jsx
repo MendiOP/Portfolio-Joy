@@ -1,27 +1,28 @@
 // src/data/experience.js
 export const experienceData = [
   {
-    position: "Research Assistant",
-    company: "Energy Systems Laboratory, Tech University",
-    duration: "Jan 2023 - Present",
+    position: "Research Assistant(Unofficial)",
+    company: "RISE Project, BUET",
+    duration: "Oct 2024 - Present",
     responsibilities: [
-      "Developed CFD models for microchannel heat exchangers using ANSYS Fluent",
-      "Optimized thermal management systems for electric vehicle batteries",
-      "Collaborated on a DOE-funded renewable energy project",
-      "Designed experimental setups for validating computational models",
-      "Published 2 journal papers based on research findings",
+      "Developing affordable, non-toxic flame-retardant composites using locally available materials",
+      "Conducting experimental tests to evaluate flame-retardant properties of the developed materials",
+      "Modeling fire behavior in informal settlements using Fire Dynamics Simulator (FDS)",
+      "Building a neural network-based predictive model for flame spread analysis",
+      "Collaborating with academic mentors to enhance fire safety strategies for high-risk communities in Dhaka",
     ],
   },
+
   {
-    position: "Mechanical Engineering Intern",
-    company: "Aerospace Solutions Inc.",
-    duration: "May 2021 - Aug 2021",
+    position: "Mechanical Engineering Trainee",
+    company: "Square Textiles Ltd.",
+    duration: "Oct 2022 - Nov 2022",
     responsibilities: [
-      "Performed structural analysis on aircraft components using ABAQUS",
-      "Assisted in wind tunnel testing procedures and data analysis",
-      "Created CAD models for prototype development using SolidWorks",
-      "Participated in design reviews and proposed improvements",
-      "Documented test procedures and results for technical reports",
+      "Gained hands-on experience in textile machinery maintenance and troubleshooting",
+      "Collaborated with engineers and technicians to ensure uninterrupted production workflows",
+      "Observed and analyzed the efficiency of mechanical systems on the factory floor",
+      "Assisted in identifying process improvements for machinery performance and energy usage",
+      "Developed adaptability, precision, and teamwork skills in a fast-paced industrial environment",
     ],
   },
 ];

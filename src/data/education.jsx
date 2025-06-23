@@ -1,21 +1,19 @@
 // src/data/education.js
 export const educationData = [
   {
-    degree: "MSc in Mechanical Engineering",
-    institution: "Tech University",
-    date: "2022 - Present",
+    degree: "M.Sc in Mechanical Engineering",
+    institution: "Bangladesh University of Engineering and Technology (BUET)",
+    date: "2024 - Present",
     description:
-      "Specialization in Thermo-fluid Dynamics. GPA: 3.8/4.0. Relevant coursework: Advanced Fluid Mechanics, Computational Heat Transfer, Finite Element Analysis, Renewable Energy Systems.",
-    thesis:
-      "Computational Analysis of Microchannel Heat Exchangers for EV Battery Cooling Systems",
+      "CGPA: 3.00/4.00. Specializing in thermo-fluid dynamics, plasma modeling, and computational material science. Relevant coursework includes Advanced Aerodynamics, Finite Element Method, Advanced Convection Heat Transfer, Advanced Thermodynamics, Mechanical Behaviour of Engineering Materials, and Mechanics of Viscous Fluid. Engaged in cutting-edge research involving COMSOL, SMILEI, OSIRIS and FDS for plasma-material and fire safety studies.",
+    thesis: " Modeling of Plasma Streamers for Nano Structuring",
   },
   {
-    degree: "BEng in Mechanical Engineering",
-    institution: "State Engineering College",
-    date: "2018 - 2022",
+    degree: "B.Sc in Mechanical Engineering",
+    institution: "Bangladesh University of Engineering and Technology (BUET)",
+    date: "2018 - 2023",
     description:
-      "Minor in Renewable Energy Systems. GPA: 3.7/4.0. Graduated with honors. Relevant coursework: Thermodynamics, Fluid Mechanics, Heat Transfer, Machine Design, Control Systems.",
-    thesis:
-      "Design Optimization of Composite Wind Turbine Blades for Low-Wind-Speed Applications",
+      "CGPA: 2.94/4.00. Focused on core mechanical engineering principles with a strong emphasis on thermal-fluid systems and energy. Relevant coursework: Thermodynamics, Fluid Mechanics, Heat Transfer, Machine Design, Building Mechanical Systems, Energy and Environment, Powerplant Engineering, Solid Mechanics. Completed experimental research on polymer tribology with signal analysis using MATLAB FFT.",
+    thesis: " Frictional Behaviour of HDPE, PVC, Acrylic Polymers",
   },
 ];

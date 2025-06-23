@@ -14,32 +14,31 @@ const Typewriter = ({ text }) => {
     const handleType = () => {
       const currentString = text[loopNum % text.length];
 
-      // Set the full string
       if (!isDeleting) {
         setCurrentText(currentString.substring(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
 
-        // If string is complete
         if (currentIndex === currentString.length) {
-          // Pause at end
-          setTypingSpeed(1000);
+          setTypingSpeed(1000); // pause at the end before deleting
           setIsDeleting(true);
+        } else {
+          setTypingSpeed(150); // normal typing speed
         }
       } else {
         setCurrentText(currentString.substring(0, currentIndex - 1));
         setCurrentIndex(currentIndex - 1);
 
-        // If string is deleted
         if (currentIndex === 0) {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
-          setTypingSpeed(150);
+          setTypingSpeed(250); // reset to typing speed
+        } else {
+          setTypingSpeed(50); // faster delete speed
         }
       }
     };
 
     timer = setTimeout(handleType, typingSpeed);
-
     return () => clearTimeout(timer);
   }, [currentIndex, isDeleting, loopNum, text, typingSpeed]);
 

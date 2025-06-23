@@ -1,6 +1,6 @@
 // src/components/Home.js
 import { motion } from "framer-motion";
-import homeImgJoy from "../assets/homeImgJoy.jpg";
+import joy2 from "../assets/joy2.jpg"; // Assuming you have another image for the background
 
 const Home = () => {
   return (
@@ -85,7 +85,7 @@ const Home = () => {
             <div className="relative">
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <img
-                  src={homeImgJoy}
+                  src={joy2}
                   alt="Preview"
                   className="object-cover w-full h-full rounded-xl"
                 />
