@@ -30,7 +30,7 @@ const Home = () => {
               Mechanical Engineering Researcher
             </h6>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-4 pb-2"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -46,14 +46,15 @@ const Home = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Innovating Energy <br className="hidden sm:inline" />
-              Systems of Tomorrow
+              Computational Materials <br className="hidden sm:inline" />
+              Engineering Innovator
             </motion.h1>
 
             <p className="text-gray-700 text-lg mb-8 max-w-lg">
-              Specializing in computational fluid dynamics and sustainable
-              energy solutions for industrial applications. Passionate about
-              developing innovative thermal management systems.
+              Specializing in Plasma Dynamics for Nano-Engineering Development |
+              Polymer Tribology & Thermal System Design Advanced Simulations
+              (COMSOL/SMILEI/OSIRIS/FDS) & AI Modeling Sustainable Solutions for
+              Energy & Safety Applications.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -66,12 +67,12 @@ const Home = () => {
                 View Research
               </motion.a>
               <motion.a
-                href="#publications"
+                href="#contact"
                 className="px-6 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-gray-50 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Publications
+                Contact Me
               </motion.a>
             </div>
           </motion.div>
