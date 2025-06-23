@@ -69,7 +69,7 @@ const Sidebar = ({ isOpen, toggle, activeSection }) => {
         </div>
         <h1 className="text-xl font-bold text-center">Joy Roy</h1>
         <p className="text-blue-300 text-center">
-          MSc in Mechanical Engineering
+          M.Sc in Mechanical Engineering
         </p>
         <p className="text-blue-400 text-sm text-center mt-1">
           Bangladesh University of Engineering and Technology (BUET)
