@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import homeImgJoy from "./assets/homeImgJoy.jpg";
 import GalleryItem from "./components/GalleryItem";
 import Hamburger from "./components/Hamburger";
 import Home from "./components/Home";
@@ -42,10 +43,9 @@ function App() {
 
     // Scroll spy to detect active section
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100; // Adjusted offset for fixed sidebar
+      const scrollPosition = window.scrollY + 200;
 
       // Find which section is in view
-      let currentSection = "home";
       for (const [section, ref] of Object.entries(sectionRefs.current)) {
         if (ref) {
           const { offsetTop, offsetHeight } = ref;
@@ -53,20 +53,16 @@ function App() {
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
-            currentSection = section;
+            if (activeSection !== section) {
+              setActiveSection(section);
+            }
             break;
           }
         }
       }
-
-      if (activeSection !== currentSection) {
-        setActiveSection(currentSection);
-      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    // Trigger immediately to set initial active section
-    handleScroll();
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -108,7 +104,13 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-full w-48 h-48 md:w-64 md:h-64" />
+                  <div className="bg-gray-200 border-2 border-dashed rounded-full w-48 h-48 md:w-64 md:h-64">
+                    <img
+                      src={homeImgJoy}
+                      alt="Preview"
+                      className="object-cover w-full h-full rounded-xl"
+                    />
+                  </div>
                   <div className="absolute -top-2 -right-2 bg-secondary w-8 h-8 rounded-full"></div>
                   <div className="absolute -bottom-2 -left-2 bg-accent w-6 h-6 rounded-full"></div>
                 </div>

@@ -10,6 +10,7 @@ import {
   FaImage,
   FaUser,
 } from "react-icons/fa";
+import homeImgJoy from "../assets/homeImgJoy.jpg";
 
 const Sidebar = ({ isOpen, toggle, activeSection }) => {
   const navItems = [
@@ -42,7 +43,7 @@ const Sidebar = ({ isOpen, toggle, activeSection }) => {
 
   return (
     <div
-      className={`fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-dark to-blue-900 text-white z-40 transform transition-transform duration-300 ease-in-out 
+      className={`fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-dark to-blue-900 text-white z-40 transform transition-transform duration-300 ease-in-out
         ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 flex flex-col overflow-y-auto`}
@@ -54,11 +55,19 @@ const Sidebar = ({ isOpen, toggle, activeSection }) => {
       }}
     >
       <div className="p-6 flex flex-col items-center border-b border-blue-800">
-        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mb-4" />
-        <h1 className="text-xl font-bold text-center">Johnathan Doe</h1>
-        <p className="text-blue-300 text-center">MSc Mechanical Engineering</p>
+        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mb-4 flex items-center justify-center overflow-hidden">
+          <img
+            src={homeImgJoy}
+            alt="Preview"
+            className="object-cover w-full h-full rounded-xl"
+          />
+        </div>
+        <h1 className="text-xl font-bold text-center">Joy Roy</h1>
+        <p className="text-blue-300 text-center">
+          MSc in Mechanical Engineering
+        </p>
         <p className="text-blue-400 text-sm text-center mt-1">
-          Tech University
+          Bangladesh University of Engineering and Technology (BUET)
         </p>
       </div>
 

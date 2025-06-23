@@ -1,5 +1,6 @@
 // src/components/Home.js
 import { motion } from "framer-motion";
+import homeImgJoy from "../assets/homeImgJoy.jpg";
 
 const Home = () => {
   return (
@@ -82,7 +83,13 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96" />
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                <img
+                  src={homeImgJoy}
+                  alt="Preview"
+                  className="object-cover w-full h-full rounded-xl"
+                />
+              </div>
               <div className="absolute -bottom-4 -right-4 bg-secondary w-24 h-24 rounded-lg z-10"></div>
               <div className="absolute -top-4 -left-4 bg-accent w-16 h-16 rounded-lg"></div>
             </div>
