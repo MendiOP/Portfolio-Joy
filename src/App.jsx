@@ -579,7 +579,7 @@ function App() {
         </div>
 
         <div ref={(el) => registerSectionRef("research", el)}>
-          <Section id="research" title="Research Publications">
+          <Section id="research" title="Research">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* M.Sc. Thesis */}
               <div
